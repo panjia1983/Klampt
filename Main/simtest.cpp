@@ -17,7 +17,7 @@
 #include <GLdraw/GL.h>
 #include <GLdraw/GLLight.h>
 //#include <GL/glut.h>
-#include <glui.h>
+#include <GL/glui.h>
 #include <fstream>
 using namespace Math3D;
 using namespace GLDraw;

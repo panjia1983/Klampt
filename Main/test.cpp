@@ -5,7 +5,7 @@
 #include <GLdraw/drawgeometry.h>
 //#include <GL/glut.h>
 #include <math/random.h>
-#include <glui.h>
+#include <GL/glui.h>
 #include <fstream>
 using namespace Math3D;
 using namespace GLDraw;

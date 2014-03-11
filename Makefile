@@ -16,8 +16,9 @@ default: RobotTest
 
 unpack-deps:
 	cd Library; git clone https://github.com/krishauser/KrisLibrary
-	cd Library; tar xvzf ode-0.11.1.tar.gz
 	cd Library; tar xvzf glui-2.36.tgz
+	cd Library; wget http://sourceforge.net/projects/opende/files/ODE/0.13/ode-0.13.tar.gz; tar xvzf ode-0.13.tar.gz
+	cd Library; wget http://sourceforge.net/projects/assimp/files/assimp-3.0/assimp--3.0.1270-full.zip; unzip assimp--3.0.1270-full.zip
 
 deps: dep-KrisLibrary dep-tinyxml dep-glui dep-ode
 
@@ -31,8 +32,8 @@ dep-glui:
 	cd Library/glui-2.36/src; make
 
 dep-ode:
-	cd Library/ode-0.11.1; ./configure $(ODECONFIG)
-	cd Library/ode-0.11.1; make
+	cd Library/ode-0.13; ./configure $(ODECONFIG)
+	cd Library/ode-0.13; make
 
 docs:
 	doxygen doxygen.conf

@@ -8,8 +8,7 @@ import glob
 #these probably do not need to be changed
 klamptDir = '../..'
 krisLibraryDir = 'Library/KrisLibrary'
-odedir = 'Library/ode-0.11.1'
-#odedir = 'Library/ode-0.12'
+odedir = 'Library/ode-0.13'
 gluidir = 'Library/glui-2.36'
 #optional
 assimpDir='Library/assimp--3.0.1270-sdk'
